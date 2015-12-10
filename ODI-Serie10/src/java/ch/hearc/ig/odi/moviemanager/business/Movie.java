@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
+ * Classe business contenant toutes les informations sur les films.
  * @author etienne.schori
  */
 public class Movie {
@@ -59,6 +59,15 @@ public class Movie {
 
     public void setPersons(Map<Long, Person> persons) {
         this.persons = persons;
+    }
+    
+    /**
+     * Cette méthode va permettre d'ajouter une personne à la map persons en fonction du la personne en paramètre
+     * 
+     * @param person 
+     */
+    public void addPerson(Person person){
+        this.persons.put(person.getId(), person);
     }
 
     @Override

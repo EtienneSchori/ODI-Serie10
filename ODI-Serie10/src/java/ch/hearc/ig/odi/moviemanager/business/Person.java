@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
+ * Classe business contenant toutes les informations sur les personnes
  * @author etienne.schori
  */
 public class Person {
@@ -61,9 +61,15 @@ public class Person {
         this.movies = movies;
     }
 
-    
+    /**
+     * Cette méthode va permettre d'ajouter un film à la map movies en fonction du film en paramètre
+     * De plus, il faut ajouter la personne a la liste des films. Car c'est une relation n..m
+     * 
+     * @param movie 
+     */
     public void addMovie(Movie movie){
         this.movies.put(movie.getId(), movie);
+        movie.addPerson(this);
     }
 
     @Override

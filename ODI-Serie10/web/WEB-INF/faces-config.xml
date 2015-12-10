@@ -124,4 +124,14 @@
         <managed-bean-class>ch.hegarc.ig.odi.Bank.beans.AccountDetailsBean</managed-bean-class>
         <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
+    <managed-bean>
+        <managed-bean-name>listPerson</managed-bean-name>
+        <managed-bean-class>ch.hearc.ig.odi.moviemanager.beans.ListPerson</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>viewList</managed-bean-name>
+        <managed-bean-class>ch.hearc.ig.odi.moviemanager.beans.viewList</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
 </faces-config>
